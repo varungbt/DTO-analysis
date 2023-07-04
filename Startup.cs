@@ -30,7 +30,7 @@ namespace TodoApi
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
-                c.UseOneOfForPolymorphism();
+                // c.UseOneOfForPolymorphism();
             });
 
             services.AddDbContext<TodoContext>(options => options.UseInMemoryDatabase("TodoList"));

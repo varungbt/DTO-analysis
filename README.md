@@ -1,25 +1,16 @@
----
-languages:
-- csharp
-- aspx-csharp
-page_type: sample
-description: "This is a sample application that you can use to follow along with the Run a RESTful API with CORS in Azure App Service tutorial."
-products:
-- azure
-- aspnet-core
-- azure-app-service
----
+## DTO Pattern analysis
 
-# ASP.NET Core API sample for Azure App Service
+This repository contains code to demonstrate the usage of DTO pattern aided by Automapper
 
-This is a sample application that you can use to follow along with the tutorial at 
-[Run a RESTful API with CORS in Azure App Service](https://docs.microsoft.com/azure/app-service/app-service-web-tutorial-rest-api). 
+## Build and run codebase locally
 
-## License
+1. Build the code using the following command
 
-See [LICENSE](https://github.com/Azure-Samples/dotnet-core-api/blob/master/LICENSE.md).
+   ```
+   dotnet build
 
-## Contributing
+   ```
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
-  
+2. The required configuration to run the codebase in vscode is already setup
+
+3. Run and debug using `vscode` .NET Core Launch (web) configuration
