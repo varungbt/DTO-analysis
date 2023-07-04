@@ -6,10 +6,9 @@ This repository contains code to demonstrate the usage of DTO pattern aided by A
 
 1. Build the code using the following command
 
-   ```
+```
    dotnet build
-
-   ```
+```
 
 2. The required configuration to run the codebase in vscode is already setup
 
