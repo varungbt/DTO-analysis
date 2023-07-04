@@ -80,27 +80,5 @@ namespace TodoApi.Controllers
             // Think about data transformations between versions 
         }
 
-
-        [HttpPost]
-        public async Task<ActionResult<TodoItem>> PostTodoItem(PocDto todoDtoItem)
-        {
-            // First transform the input dto to backend cmd
-            var todoItemEngineCmd = _mapper.Map<string>(todoDtoItem);
-
-            Console.WriteLine(
-                ">>>>>>>>>>>>>>>>>>>>>>>>>>> DTO transformed into a backend string command"
-            );
-            Console.WriteLine(todoItemEngineCmd);
-
-            // Next transform the same dto to todoitem so that it be saved in db
-            var todoItem = _mapper.Map<TodoItem>(todoDtoItem);
-            _context.TodoItems.Add(todoItem);
-
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetTodoItem", new { id = todoItem.Id }, todoItem);
-
-            // Think about data transformations between versions 
-        }
     }
 }

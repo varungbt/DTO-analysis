@@ -1,6 +1,7 @@
 ## DTO Pattern analysis
 
-This repository contains code to demonstrate the usage of DTO pattern aided by Automapper
+- This repository contains code to demonstrate the usage of DTO pattern aided by Automapper
+- `Controllers\TodoController.cs` `POST` method demonstrates the idea behind the usage of a centralized mapper and [Data Transfer Objects](https://martinfowler.com/eaaCatalog/dataTransferObject.html)
 
 ## Build and run codebase locally
 
@@ -13,6 +14,14 @@ This repository contains code to demonstrate the usage of DTO pattern aided by A
 2. The required configuration to run the codebase in vscode is already setup
 
 3. Run and debug using `vscode` .NET Core Launch (web) configuration
+
+## Swagger documentation
+
+- The auto-generated swagger docs can be accessed at
+
+  ```
+  http://localhost:5000/swagger/index.html
+  ```
 
 ## Points of interest
 
